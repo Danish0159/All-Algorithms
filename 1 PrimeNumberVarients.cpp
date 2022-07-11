@@ -14,7 +14,7 @@ Program.
 */
 
 
-//Prime Number Code
+// Prime Number Code
 /*A prime number is a natural number with exactly 2 divisors
 1 and the number itself. */
 

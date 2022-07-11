@@ -16,6 +16,8 @@
  
  
  /*
+ Note: Memory Stores the data as bitwise.
+ 
 1)  
 To find the reverse of digits and make into number. 
 1,2,3 => 321
@@ -27,9 +29,7 @@ To make a number from digits.
 1,2,3 =>123
 Formula
 Answer = (Answer * 10 ) + digit
- 
- 
- */
+*/
  
  
  
