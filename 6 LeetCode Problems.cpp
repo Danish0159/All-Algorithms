@@ -100,3 +100,24 @@ return ans;
         
     }
 };
+
+// Problem 5
+// For Description + Code (Go to the following URL)
+// https://leetcode.com/problems/power-of-two/
+
+// Brute Force Solution.
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        // int limit is upto 2 ki power 31-1 (We will not take 31 coz it is ans-1)
+        for(int i=0; i<=30;i++){
+            if(pow(2,i)==n){
+                return true;
+            }            
+        }
+        
+        return false;
+    }
+};
+
+
