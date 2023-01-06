@@ -25,6 +25,7 @@ using namespace std;
 
 // Time Complexity is O(n), 
 
+int numberOfSwapping = 0;
 
 int selectionSort(int arr[], int n){
 	for(int i = 0; i<n-1; i++){   // (using n-1, because the last reamainning number will already be in its right place.
@@ -34,8 +35,10 @@ int selectionSort(int arr[], int n){
 				min = j;
 			}
 		}
+		numberOfSwapping++;
 		swap(arr[min], arr[i]);//swap minimum element to its place
 	}
+    cout<<"Number of Swapping: "<<numberOfSwapping<<endl;
 }
 	
 	
@@ -43,7 +46,7 @@ int main() {
 //int arr[17] =   {30, 54, 118, 163,227, 283, 325, 383, 394, 475, 566, 735, 807, 836, 863, 972, 995};
 //int n = 17;
  
- int arr[5] = {8, 5, 7, 6, 4};
+ int arr[6] = {5, 4, 6, 3, 2, 1};
  int n = sizeof(arr)/sizeof(arr[0]);
 	
  selectionSort(arr, n);

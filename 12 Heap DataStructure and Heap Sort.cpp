@@ -118,29 +118,30 @@ class heap{
 // It Make Sure the provided index is at right position after finish.
 // It heapify a subtree rooted with node i.
 void heapify(int arr[], int n, int i){
-	
-	int largest = i;   // Initialize largest as root
-	int l = 2 * i;   // left = 2*i 
-	int r = 2 * i + 1;   // right = 2*i + 1
-	
-    // If root is less than left child.
-    if (l <= n && arr[largest]<arr[l]){
-    	largest = l;
-	}
-	
-	 // If root is less than right child.
-    if (r <= n && arr[largest]<arr[r]){
-    	largest = r;
-	}
-	
+  
+    int smallest = i;   
+    int l = 2 * i + 1;   // 0-based indexing formula.
+    int r = 2 * i + 2;   // 0-based indexing formula.
+    
+    // If root is less than left child.(only < for 0-based indexing)
+    if (l < n && arr[smallest]>arr[l]){
+        smallest = l;
+    }
+    
+     // If root is less than right child.
+    if (r < n && arr[smallest]>arr[r]){
+        smallest = r;
+    }
+    
    // If largest is not root.
-	if(largest != i){
-		swap(arr[largest],arr[i]);
-		
-		
+    if(smallest != i){
+        swap(arr[smallest],arr[i]);
+        
+        
       // Recursively heapify the affected sub-tree
-        heapify(arr, n, largest);		
-	}
+        heapify(arr, n, smallest);        
+    }
+	
 }
 
 // (Building a heap OR Heap Creation )
@@ -148,9 +149,11 @@ void buildMaxHeap(int arr[], int n){
     // (The Leaf nodes are lying on from (n/2+1 to nth), the leaf nodes are already heap, so we will not work on them,
     // We will run loop from (n/2 to 0 (bottom-up)).
 
-	for ( int i = n/2; i>0; i--){
-		heapify(arr, n, i);
-	}
+
+	for ( int i = n/2-1; i>=0; i--) {
+        heapify(arr, n, i);
+    }
+
 	
 }
 
@@ -182,8 +185,8 @@ int main(){
 	
 	
 
-	int arr[6] = {-1,54,53,55,52,50};
-    int n = 5;
+	int arr[16] = {-1,10, 19, 25, 55, 29, 127, 95, 171, 69, 126, 77, 115, 174, 117, 147 };
+    int n = 15;
 
 
 	buildMaxHeap(arr, n);

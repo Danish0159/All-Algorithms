@@ -79,7 +79,7 @@ void mergeSort(int A[], int left, int right)
 
 int main()
 {
-	int A[] = { 38, 27, 43, 3, 9, 55, 12, 82, 10, 5 };
+	int A[] = { 20, 47, 15, 8, 9, 4, 40, 30, 12, 17};
 	int n = sizeof(A)/sizeof(A[0]);
 
 	mergeSort(A, 0, n - 1);

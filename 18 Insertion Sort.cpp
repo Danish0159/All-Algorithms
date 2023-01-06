@@ -20,15 +20,19 @@ Complexity In Slides.
 #include<iostream>
 using namespace std;
 
+int numberOfSwapping = 0;
+
 
 int insertionSort(int arr[], int n){
 	for(int i = 0; i < n - 1; i++){
 		int j = i + 1;  	// Take i+1th element for placing him at its right place.
 		while(j > 0 && arr[j] < arr[j-1]){ //compare with sorted elements
+			numberOfSwapping++;
 			swap(arr[j], arr[j-1]);	
 			j--;		
 		}
 	}
+	cout<<"Number of Swapping: "<<numberOfSwapping<<endl;
 }
 	
 	
@@ -37,7 +41,7 @@ int main() {
 
 // int arr[] = { 9,8,7,6,5,4,3,2,1};
 
- int arr[] = { 4, 11, 12, 20};
+ int arr[] = { 8, 22, 7, 9, 31, 5, 13};
 
  int n = sizeof(arr)/sizeof(arr[0]);
 

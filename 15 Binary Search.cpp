@@ -72,12 +72,12 @@ int binarySearch(int arr[], int n, int key){
 	
 	
 int main() {
-int arr[17] =   {30, 54, 118, 163,227, 283, 325, 383, 394, 475, 566, 735, 807, 836, 863, 972, 995};
-int n = 17;
+int arr[] = { 40,   90,   107,  120,    153,   173,  193   ,212,  279,   412,  487,   563,   754,  790  , 890 , 914,  952 };
+int n = sizeof(arr)/sizeof(arr[0]);
  
  //int arr[5] = {4, 5, 6, 7, 8};
  //int n = 5;
 	
- binarySearch(arr, n, 836);
+ binarySearch(arr, n, 790);
 }
 
