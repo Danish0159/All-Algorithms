@@ -1,0 +1,21 @@
+function countOccurrences(arr) {
+    const counts = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        const currentElement = arr[i];
+
+        if (counts[currentElement] === undefined) {
+            counts[currentElement] = 1;
+        } else {
+            counts[currentElement]++;
+        }
+    }
+
+    return counts;
+}
+
+// Example usage:
+let inputArray = [1, 2, 3, 1, 2, 4, 5, 4, 2, 3, 1];
+let occurrences = countOccurrences(inputArray);
+
+console.log("Element Counts:", occurrences);

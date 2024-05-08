@@ -1,0 +1,34 @@
+function minMaxFreq(arr) {
+    const counts = {};
+    let maxFreq = 0;
+    let minFreq = arr.length;
+
+    for (let i = 0; i < arr.length; i++) {
+        const currentElement = arr[i];
+        // Counting frequency.
+        if (counts[currentElement] === undefined) {
+            counts[currentElement] = 1;
+        } else {
+            counts[currentElement]++;
+        }
+        
+     
+     // Updating Max and Min variable.
+        if(counts[currentElement] > maxFreq){
+            maxFreq = counts[currentElement];
+        }
+        else if(counts[currentElement] < minFreq){
+            minFreq = counts[currentElement];
+        }
+    }
+    
+    console.log(maxFreq);
+    console.log(minFreq);
+
+      return;
+}
+
+// Example usage:
+let inputArray = [1, 1, 1, 1, 1, 2 , 2, 3];
+minMaxFreq(inputArray);
+
