@@ -60,6 +60,85 @@ https://leetcode.com/problems/rearrange-array-elements-by-sign/submissions/12525
 
 
 
+/*
+7)  Leaders in an Array
 
+Description
+https://takeuforward.org/data-structure/leaders-in-an-array/
+
+
+// Go to submission part
+https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=leaders-in-an-array
+
+*/
+
+
+
+/*
+8)  Longest Consecutive Sequence in an Array
+
+Description
+https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array/
+
+
+https://leetcode.com/problems/longest-consecutive-sequence/submissions/1254311475/
+*/
+
+
+
+/*
+9)  Set Matrix Zero
+
+
+Description
+https://takeuforward.org/data-structure/set-matrix-zero/
+
+
+https://leetcode.com/problems/set-matrix-zeroes/submissions/1255136846/
+*/
+
+
+
+/*
+10)  Print the matrix in spiral manner
+
+
+Description
+https://takeuforward.org/data-structure/spiral-traversal-of-matrix/
+
+
+https://leetcode.com/problems/spiral-matrix/submissions/1255149770/
+*/
+
+
+
+
+/*
+11) 	Rotate Matrix by 90 degrees
+
+
+
+Description
+https://takeuforward.org/data-structure/rotate-image-by-90-degree/
+
+https://leetcode.com/problems/rotate-image/submissions/1256926618/
+
+
+*/
+
+
+
+/*
+12) 	Count SubArrays
+
+
+Description
+//approach1: SIMPLE FINDING THE SUBARRAY METHOD.
+//approach2: Using prefix sum availabe on striver's website.
+
+https://takeuforward.org/arrays/count-subarray-sum-equals-k/
+
+
+*/
 
 
